@@ -1,0 +1,1 @@
+MandrillEmail = Email.new

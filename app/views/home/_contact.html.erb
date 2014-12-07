@@ -1,0 +1,19 @@
+<h2 class="section-name">Get In Touch!</h2>
+
+<%= form_tag(contact_path, method: :post, :class => "form-control") do %>
+  <div class="form-container">
+    <%= label_tag("Name", nil, class: "label") %>
+    <%= text_field_tag(:name, nil, class: "input-box") %>
+  </div>
+  <div class="form-container">
+    <%= label_tag("Email", nil, class: "label") %>
+    <%= text_field_tag(:email, nil, class: "input-box") %>
+  </div>
+  <div class="form-container">
+    <%= label_tag("Message", nil, class: "label") %>
+    <%= text_area_tag(:body, nil, class: "input-box message") %>
+  </div>
+  <%= submit_tag "SEND", name: nil, class: "send-btn" %>
+<% end %>
+
+<span><%= flash[:notice] if flash[:notice] %></span>

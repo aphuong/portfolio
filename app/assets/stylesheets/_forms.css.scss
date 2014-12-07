@@ -1,0 +1,28 @@
+.form-control {
+  width: 35%;
+  text-align: right;
+  margin: 0 auto;
+}
+
+.form-container {
+  border-bottom: 1px solid steelblue;
+  width: 440px;
+  margin-bottom: 20px;
+}
+
+.label {
+  margin-right: 10px;
+  font-family: $font-montserrat;
+  text-transform: uppercase;
+}
+
+.input-box {
+  border: none;
+  background: none;
+  width: 375px;
+  &.message {
+    height: 100px;
+    width: 345px;
+  }
+}
+

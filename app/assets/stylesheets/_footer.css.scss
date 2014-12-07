@@ -1,0 +1,23 @@
+footer {
+
+  ul {
+    list-style: none;
+    text-align: right;
+    margin: 20px;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+
+.footer {
+  text-align: center;
+
+  .fa {
+    font-size: 1.2em;
+    padding: 20px;
+  }
+}
+

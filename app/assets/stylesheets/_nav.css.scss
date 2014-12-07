@@ -1,0 +1,29 @@
+nav {
+  display: none;
+  z-index: 2;
+  position: fixed;
+  left: -500px;
+  width: 30%;
+  height: 100%;
+  background: #F2F2F2;
+  color: #444;
+  padding-top: 70px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    
+    :hover {
+      background-color: steelblue;
+    }
+  }
+
+  li {
+    border-bottom: solid 1px #444;
+    padding: 20px 40px;
+  }
+}
+
+.menu {
+  padding-left: 40px;
+}

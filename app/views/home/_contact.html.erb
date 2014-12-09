@@ -1,19 +1,60 @@
-<h2 class="section-name">Get In Touch!</h2>
+<div class="contact-container">
+<h3 class="flash"><%= flash[:notice] if flash[:notice] %></h3>
 
-<%= form_tag(contact_path, method: :post, :class => "form-control") do %>
-  <div class="form-container">
-    <%= label_tag("Name", nil, class: "label") %>
-    <%= text_field_tag(:name, nil, class: "input-box") %>
-  </div>
-  <div class="form-container">
-    <%= label_tag("Email", nil, class: "label") %>
-    <%= text_field_tag(:email, nil, class: "input-box") %>
-  </div>
-  <div class="form-container">
-    <%= label_tag("Message", nil, class: "label") %>
-    <%= text_area_tag(:body, nil, class: "input-box message") %>
-  </div>
-  <%= submit_tag "SEND", name: nil, class: "send-btn" %>
-<% end %>
+  <div class="contact-wrapper">
+    <div class="contact-info col-3">
+      <h3>CONTACT ME</h3>
+      <p>If you'd like to get in touch, please leave me a message and I'll respond as soon as possible.</p>
+      <p>CONNECT WITH ME:</p>
+      <div class="social">
+        <%= link_to "https://github.com/aphuong", :target => "_blank" do %>
+          <span class="social-icon"><i class="fa fa-github"></i> aphuong</span>
+        <% end %>
+      </div>
+      <div class="social">
+        <%= link_to "http://www.linkedin.com/in/anhlarusso/", :target => "_blank" do %>
+          <span class="social-icon"><i class="fa fa-linkedin"></i> anhlarusso</span>
+        <% end %>
+      </div>
+      <div class="social">
+        <%= link_to "http://aphu420.tumblr.com/", :target => "_blank" do %>
+          <span class="social-icon"><i class="fa fa-tumblr"></i> aphu420</span>
+        <% end %>
+      </div>
+      <div class="social">
+        <%= link_to "https://twitter.com/aphu420", :target => "_blank" do %>
+          <span class="social-icon"><i class="fa fa-twitter"></i> @aphu420</span>
+        <% end %>
+      </div>
+    </div>
 
-<span><%= flash[:notice] if flash[:notice] %></span>
+    <div class="form-wrapper col-9">
+      <%= form_tag(contact_path, method: :post) do %>
+        <div class="stamp">
+          <div class="inside">
+            <ul>
+              <li class="top">1st Class</li>
+              <li class="middle">
+                <div class="form-container">
+                  <%= submit_tag "SEND", name: nil, class: "btn send-btn" %>
+                </div>
+              </li>
+              <li class="bottom">49&cent;</li>
+            </ul>
+          </div>
+        </div>
+        <%= label_tag("Name", nil, class: "label") %>
+        <br />
+        <%= text_field_tag(:name, nil, class: "input-box", :placeholder=>'your name', :required => true) %>
+        <br />
+        <%= label_tag("Email", nil, class: "label") %>
+        <br />
+        <%= text_field_tag(:email, nil, class: "input-box", :placeholder=>'your email', :required => true) %>
+        <br />
+        <%= label_tag("Message", nil, class: "label") %>
+        <br />
+        <%= text_area_tag(:body, nil, class: "input-box message", :placeholder=>'your message', :required => true) %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -8,14 +8,16 @@
 
 
 // Vendor
+@import 'bourbon';
 @import 'normalize';
 @import 'flexslider';
 
 
 // Stylesheets
-@import 'parallax';
-@import 'background';
 @import 'main';
+@import 'about';
+@import 'blog';
+@import 'work';
 
 // Partial
 @import 'nav';
@@ -25,3 +27,13 @@
 // Components
 @import 'forms';
 @import 'buttons';
+
+// animation
+@include keyframes(dash) {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

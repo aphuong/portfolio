@@ -1,20 +1,21 @@
  *{box-sizing: border-box;}
-
+html {
+  background-color: rgb(242, 239, 242);
+}
 body {
   font-family: $font-lato;
   font-weight: 300;
-  background: steelblue;
+  color: #444;
+  // background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVQIW2O8bPx6s+5ZUV8GKGCEMYgXAAABjQQFw5lyEQAAAABJRU5ErkJggg==)repeat;
 }
 
-// html { 
-//   background-image: -ms-radial-gradient(center bottom, circle farthest-corner, #E6F1D2 0%, #FF4A3F 100%);
-//   background-image: -moz-radial-gradient(center bottom, circle farthest-corner, #E6F1D2 0%, #FF4A3F 100%);
-//   background-image: -o-radial-gradient(center bottom, circle farthest-corner, #E6F1D2 0%, #FF4A3F 100%);
-//   background-image: -webkit-gradient(radial, center bottom, 0, center bottom, 561, color-stop(0, #E6F1D2), color-stop(1, #FF4A3F));
-//   background-image: -webkit-radial-gradient(center bottom, circle farthest-corner, #E6F1D2 0%, #FF4A3F 100%);
-//   background-image: radial-gradient(circle farthest-corner at center bottom, #E6F1D2 0%, #FF4A3F 100%);
-//   min-height:100%;
-// }
+#path, 
+.work-icon,  
+#skill-icon {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  @include animation(dash 4s linear alternate infinite);
+}
 
 a {
   color: #444;
@@ -29,7 +30,6 @@ ul {
   padding: 0px;
 }
 
-
 .shim {
   display: none;
   position: absolute;
@@ -42,94 +42,130 @@ ul {
   background: rgba(1, 2, 2, 0.67);
 }
 
-.row {
-  width: 100%;
-  position: relative;
-  margin: 4% 0%;
-  text-align: center;
-}
-
-.laptop-img {
-  max-width: 60%; 
-  display: inline-block;
-}
-
-.iphone-img {
-  position: absolute;
-  right: 373px;
-  bottom: -30px;
-  max-width: 12%;
-  display: inline-block;
-}
-
-.description {
-  text-align: left;
-  margin: 0% 0% 0% 2%;
-  vertical-align: top;
-  width: 20%;
-  display: inline-block;
-  h5, h6 {
-    font-family: $font-montserrat;
-  }
-  h6 {
-    margin: 0px;
-  }
-  p {
-    margin: 0px;
-  }
-}
-
-.flexslider {
-  .slides {
-    padding: 0px;
-  }
-}
 
 .section-name {
   text-align: center;
   margin-left: 20px;
 }
 
+// main page
+.home-flexslider {
+  background: rgb(242, 239, 242);
+  // color: #fff;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  width: 70%;
+  box-shadow: none;
+  margin: 0 auto;
+  height: 335px;
+  padding-top: 60px;
 
-// skills section
-.col-4 {
-  width: 33%;
-  display: inline-block;
+  h1 {
+    font-size: 3em;
+  }
 }
 
-
-
-// main page
 .main-nav {
+  border-radius: 4px;
+  padding: 5px;
   display: inline-block;
-  width: 20%;
+  width: 120px;
+  border: 1px solid #EA0EFF;
+  margin: 10px;
+  a {
+    color: #AA0ABA;
+  }
 }
 
 .main-nav-wrapper {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  // padding-top: 20px;
 }
 
-// about 
-.about-wrapper {
-  text-align: center;
+.menu-btn {
+  display: none;
 }
 
-.about-me {
-  margin: 0 auto;
-  text-align: left;
-  width: 50%;
+#about,
+#work, 
+#blog,
+#contact {
+  display: none;
 }
 
-// blog
-.blog-wrapper {
-  width: 60%;
-  margin: 0 auto;
-  padding-bottom: 30px;
+.style0{
+  stroke: #FF3657;
+  stroke-miterlimit:  10;
+}
+.style1{
+  stroke: #FF3657;
+  stroke-miterlimit:  10;
+  // fill: #ffffff;
+  fill: none;
+}
+.style2{
+  stroke: #FF3657;
+  stroke-miterlimit:  10;
+  // fill: #FFFFFF;
+  fill: rgb(242, 239, 242);
+}
+.style3{
+  stroke: #FF3657;
+  stroke-miterlimit:  10;
 }
 
-.blog-entry {
-  border-bottom: 1px dotted #444;
-  padding: 20px;
+.work-icon {
+  stroke: #FFCB2B;
+  stroke-miterlimit:  10;
+  fill: none;
+}
+
+.me0{
+  stroke: #444;
+  stroke-miterlimit:  10;
+  fill: #FFEFD0;
+  // fill: #fff;
+  // fill: rgb(242, 239, 242);
+}
+.me1{
+  stroke: #444;
+  stroke-miterlimit:  10;
+  fill: none;
+  // fill: #fff;
+  // fill: rgb(242, 239, 242);
+}
+.me2{
+  stroke: #444;
+  stroke-miterlimit:  10;
+  fill: #000;
+  // fill: rgb(242, 239, 242);
+}
+.me3{
+  stroke: #444;
+  stroke-miterlimit:  10;
+  fill: #54154E;
+  // fill: #fff;
+  // fill: rgb(242, 239, 242);
+}
+.me4{
+  stroke: #444;
+  stroke-miterlimit:  10;
+  fill: #595653;
+  // fill: #fff;
+  // fill: rgb(242, 239, 242);
+}
+.me5{
+  stroke: #EA0EFF;
+  stroke-miterlimit:  10;
+  fill: #FFFFFF;
+  // fill: rgb(242, 239, 242);
+}
+
+@media screen and (max-width: 600px) {
+  .menu-btn {
+    display: inline-block;
+  }
 }

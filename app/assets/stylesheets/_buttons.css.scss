@@ -1,3 +1,17 @@
+.btn {
+  border: 1px solid #EA0EFF;
+  color: #AA0ABA;
+  background: none;
+  border-radius: 4px;
+  padding: 5px;
+
+  &.send-btn {
+    border: none;
+    color: #fff;
+    text-shadow: 2px 2px #444;
+  }
+}
+
 .menu-btn {
   position: fixed;
   right: 2%;
@@ -6,10 +20,7 @@
 
 .social {
   display: inline-block;
+  font-size: 1em;
+  margin-left: 5px;
 }
 
-.send-btn {
-  border-radius: 4px;
-  border: none;
-  background: steelblue;
-}

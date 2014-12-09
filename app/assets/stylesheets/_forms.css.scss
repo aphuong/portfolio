@@ -1,13 +1,9 @@
-.form-control {
-  width: 35%;
-  text-align: right;
-  margin: 0 auto;
+.form-container {
+  width: 100%;
 }
 
-.form-container {
-  border-bottom: 1px solid steelblue;
-  width: 440px;
-  margin-bottom: 20px;
+.flash {
+  text-align: center;
 }
 
 .label {
@@ -17,12 +13,110 @@
 }
 
 .input-box {
-  border: none;
+  border: 1px solid #444;
   background: none;
-  width: 375px;
+  border-radius: 4px;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
   &.message {
     height: 100px;
-    width: 345px;
+    width: 500px;
   }
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #fff;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #fff;
+}
+
+.contact-container {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.contact-wrapper {
+  border: 5px dotted #444;
+  width: 65%;
+  padding: 30px;
+  margin: 0 auto;
+  line-height: 2;
+  background: #b0a69c;
+}
+
+.col-3{
+  display: inline-block;
+  width: 27%;
+  vertical-align: top;
+  border-right: 1px solid #444;
+}
+
+.col-9 {
+  display: inline-block;
+  width: 68%;
+  margin-left: 20px;
+}
+
+
+.form-wrapper {
+  position: relative;
+}
+
+.bottom {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAALElEQVQYV2NU/rriPwMQ3OWOYATRuAAj0QqxmYBNM1briFaIzRbi3TgEPAMA680gC9+e9ykAAAAASUVORK5CYII=)repeat;
+  color: white;
+  text-align: right;
+  text-shadow: 2px 2px #444;
+}
+
+.inside {
+  position: relative;
+  border: 7px #eee solid;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: block;
+    padding: 8px 5px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: verdana;
+  }
+}
+
+.top {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPUlEQVQYV2NkQAPKX1f8v8sdwYgujiIAU4RNMVwhuiQ6H6wQl3XI4oy4FMHcCJPHcDS6J2A2EqUQpJhohQB4oSbIHJRIoQAAAABJRU5ErkJggg==)repeat;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px #444;
+}
+
+.stamp {
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  border: 1px #fff dashed;
+  box-shadow: 1px 1px 3px 0 #555;
+  transform: rotate(3deg);
+  -webkit-backface-visibility: hidden;
+}
+
+.middle {
+  background: #2BCB70;
+  color: #333;
+  text-align: center;
+}

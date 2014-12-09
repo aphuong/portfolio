@@ -1,0 +1,48 @@
+// work
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  position: relative;
+  margin: 2% 0%;
+  text-align: center;
+}
+
+.laptop-img {
+  max-width: 60%; 
+  display: inline-block;
+}
+
+.iphone-img {
+  position: absolute;
+  right: 373px;
+  bottom: -30px;
+  max-width: 12%;
+  display: inline-block;
+}
+
+.description {
+  text-align: left;
+  margin: 0% 0% 0% 2%;
+  vertical-align: top;
+  width: 20%;
+  display: inline-block;
+  h5, h6 {
+    font-family: $font-montserrat;
+  }
+  h6 {
+    margin: 15px 0px 10px;
+  }
+  p {
+    margin: 0px;
+  }
+}
+
+.flexslider {
+  .slides {
+    padding: 0px;
+  }
+}

@@ -2,26 +2,33 @@
   <h2 class="section-name">Learning to code &amp; writing about it!</h2>
 
   <div class="blog-entry">
-    <%= link_to "http://aphu420.tumblr.com/post/104538538780/obscenity-gem-a-profanity-filter", :target => "_blank" do %>
-      <h5>Obscenity Gem, a profanity filter.</h5>
-      <p>Have you ever wanted to filter out certain words from user generated text in your web applications?</p>
+    <%= link_to "http://aphu420.tumblr.com/post/104594780500/debugging-rails-like-a-pro", :target => "_blank" do %>
+      <p>December 7, 2014</p>
+      <h4>Debugging Rails Like a Pro</h4>
+      <p>binding.pry, two words that have the ability to freeze your program in time and in IRB, gives you a more powerful way to debug.</p>
     <% end %>
   </div>
 
   <div class="blog-entry">
     <%= link_to "http://aphu420.tumblr.com/post/104589502160/svg-101", :target => "_blank" do %>
-      <h5>SVG 101</h5>
+      <p>December 7, 2014</p>
+      <h4>SVG 101</h4>
       <p>Scalable Vector Graphics, can be used in your web apps pretty easily. Here are some tips to get you started.</p>
     <% end %>
   </div>
 
   <div class="blog-entry">
-    <%= link_to "http://aphu420.tumblr.com/post/104594780500/debugging-rails-like-a-pro", :target => "_blank" do %>
-      <h5>Debugging Rails Like a Pro</h5>
-      <p>binding.pry, two words that have the ability to freeze your program in time and in IRB, gives you a more powerful way to debug.</p>
+    <%= link_to "http://aphu420.tumblr.com/post/104538538780/obscenity-gem-a-profanity-filter", :target => "_blank" do %>
+      <p>December 6, 2014</p>
+      <h4>Obscenity Gem, a profanity filter.</h4>
+      <p>Have you ever wanted to filter out certain words from user generated text in your web applications?</p>
     <% end %>
   </div>
 
-  <h4>Read more: <%= link_to "http://aphu420.tumblr.com/", "http://aphu420.tumblr.com/", :target => "_blank" %></h4>
+  <h4>
+    Read more: <%= link_to "http://aphu420.tumblr.com/", :target => "_blank" do %>
+    <span class="social-icon"><i class="fa fa-tumblr"></i> aphu420</span>
+    <% end %>
+  </h4>
 
 </div>

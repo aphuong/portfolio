@@ -23,8 +23,9 @@
         <ul>
           <li>JavaScript</li>
           <li>jQuery</li>
+          <li>D3.js</li>
           <li>HTML</li>
-          <li>CSS, SCSS</li>
+          <li>CSS, SCSS, SASS</li>
         </ul>
       </div>
 
@@ -56,7 +57,28 @@
       </svg>
       <h3>Hello, I'm Anh LaRusso.</h3>
        <ul>
-        <li>Junior Full-Stack Developer</li>
+        <h5>FULL STACK-DEVELOPER</h5>
+        <p>I'm inspired by creativity and enthusiastic about building elegant, responsive and effective web apps. In my former life, I was a teacher and counselor. Now I'm hoping to change the world through the code I write!</p>
+        <div class="social">
+          <%= link_to "https://github.com/aphuong", :target => "_blank" do %>
+            <span class="social-icon">| <i class="fa fa-github"></i> aphuong | </span>
+          <% end %>
+        </div>
+        <div class="social">
+          <%= link_to "http://www.linkedin.com/in/anhlarusso/", :target => "_blank" do %>
+            <span class="social-icon"><i class="fa fa-linkedin"></i> anhlarusso | </span>
+          <% end %>
+        </div>
+        <div class="social">
+          <%= link_to "http://aphu420.tumblr.com/", :target => "_blank" do %>
+            <span class="social-icon"><i class="fa fa-tumblr"></i> aphu420 | </span>
+          <% end %>
+        </div>
+        <div class="social">
+          <%= link_to "https://twitter.com/aphu420", :target => "_blank" do %>
+            <span class="social-icon"><i class="fa fa-twitter"></i> @aphu420 | </span>
+          <% end %>
+        </div>
       </ul>
     </div>
     <div class="col-4">
@@ -90,14 +112,15 @@
         <polyline id="skill-icon" points="107.1,60.3 107.1,43.3 111.8,43.3 111.8,60.3" class="skill0"/>
       </svg>
 
-      <h3>Other Skills</h3>
-      
+      <h3>Other Skills/Interests</h3>
       <ul>
-        <li>Knitting</li>
-        <li>Needle Felting</li>
         <li>Adobe Photoshop &amp; Illustrator</li>
         <li>Teaching (math &amp; science)</li>
         <li>Career/Academic Counseling</li>
+        <%= link_to "http://instagram.com/anhmadenyc", :target => "_blank" do %>
+          <li>Needle Felting/Knitting/Crafting <i class="fa fa-instagram"></i></li>
+        <% end %>
+        <li>Making Summer Rolls and Baked Goods</li>
       </ul>
     </div>    
   </div>

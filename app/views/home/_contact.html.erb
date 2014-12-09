@@ -39,7 +39,7 @@
                   <%= submit_tag "SEND", name: nil, class: "btn send-btn" %>
                 </div>
               </li>
-              <li class="bottom">49&cent;</li>
+              <li class="bottom">Free!</li>
             </ul>
           </div>
         </div>
@@ -54,6 +54,9 @@
         <%= label_tag("Message", nil, class: "label") %>
         <br />
         <%= text_area_tag(:body, nil, class: "input-box message", :placeholder=>'your message', :required => true) %>
+        <div class="send-container">
+          <%= submit_tag "SEND", name: nil, class: "btn send-btn" %>
+        </div>
       <% end %>
     </div>
   </div>

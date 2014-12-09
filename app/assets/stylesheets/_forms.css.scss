@@ -134,3 +134,38 @@
     background: #fff;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .contact-wrapper {
+    width: 100%;
+  }
+
+  .input-box {
+    width: 90%;
+    &.message {
+      width: 90%;
+    }
+  }
+
+  .col-3 {
+    display: block;
+    width: 100%;
+    border: none;
+  }
+
+  .col-9 {
+    display: block;
+    width: 100%;
+  }
+
+  .stamp {
+    display: none;
+  }
+
+  .contact-info {
+    .social {
+      margin-left: 50px;
+    }
+  }
+
+}

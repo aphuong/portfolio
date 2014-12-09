@@ -26,3 +26,32 @@
   fill: none;
 }
 
+.mobile-show {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .col-4 {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .mobile-show {
+    display: block;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+  
+  .about-wrapper {
+    .divider {
+      display: none;
+    }
+    .social {
+      margin-left: 30px;
+    }
+  }
+}

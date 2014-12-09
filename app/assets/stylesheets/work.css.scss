@@ -50,3 +50,28 @@
 .links {
   font-weight: bolder;
 }
+
+@media screen and (max-width: 600px) {
+
+  .description {
+    display: block;
+    width: 100%;
+
+    p, h6, h5 {
+      margin: 15px 50px;
+    }
+  }
+  
+  .links {
+    text-align: center;
+  }
+
+  .iphone-img {
+    right: 26px;
+    bottom: 360px;
+  }
+
+  .section-name {
+    margin-top: 80px;
+  }
+}

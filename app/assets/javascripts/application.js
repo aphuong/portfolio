@@ -96,17 +96,17 @@ $(document).ready(function(){
     $("#contact").fadeIn("slow");
   });
 
-  $(".menu-btn").click(function(){
-    $(".shim").fadeIn();  
-    $("nav").show().animate({ left: "0px" }, 500);
-    $("body").css("overflow", "hidden");
-  });
+  // $(".menu-btn").click(function(){
+  //   $(".shim").fadeIn();  
+  //   $("nav").show().animate({ left: "0px" }, 500);
+  //   $("body").css("overflow", "hidden");
+  // });
 
-  $(".shim").click(function(){
-    $(this).fadeOut();
-    $("nav").animate({ left: "-40%" }, 500);
-    $("body").css("overflow", "visible");
-  });
+  // $(".shim").click(function(){
+  //   $(this).fadeOut();
+  //   $("nav").animate({ left: "-40%" }, 500);
+  //   $("body").css("overflow", "visible");
+  // });
 
  
 

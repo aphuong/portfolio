@@ -27,25 +27,29 @@
 
 ::-webkit-input-placeholder { /* WebKit browsers */
   color: #fff;
+  padding-left: 10px;
 }
 
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
   color: #fff;
   opacity: 1;
+  padding-left: 10px;
 }
 
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
   color: #fff;
   opacity: 1;
+  padding-left: 10px;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10+ */
   color: #fff;
+  padding-left: 10px;
 }
 
 .contact-container {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .contact-wrapper {
@@ -78,7 +82,7 @@
 
 .bottom {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAALElEQVQYV2NU/rriPwMQ3OWOYATRuAAj0QqxmYBNM1briFaIzRbi3TgEPAMA680gC9+e9ykAAAAASUVORK5CYII=)repeat;
-  color: white;
+  color: #fff;
   text-align: right;
   text-shadow: 2px 2px #444;
 }
@@ -101,7 +105,7 @@
 
 .top {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPUlEQVQYV2NkQAPKX1f8v8sdwYgujiIAU4RNMVwhuiQ6H6wQl3XI4oy4FMHcCJPHcDS6J2A2EqUQpJhohQB4oSbIHJRIoQAAAABJRU5ErkJggg==)repeat;
-  color: white;
+  color: #fff;
   text-align: center;
   text-shadow: 2px 2px #444;
 }
@@ -120,4 +124,8 @@
   background: #2BCB70;
   color: #333;
   text-align: center;
+
+  &:hover {
+    background: #fff;
+  }
 }

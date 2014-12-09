@@ -20,10 +20,10 @@ $(document).ready(function(){
  
   $(".home-flexslider").flexslider({
     animation: "slide",
-    slideshow: true,
+    slideshow: false,
     touch: true,
     useCSS: true,
-    directionNav: false
+    directionNav: true
   });
 
 
